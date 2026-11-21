@@ -76,10 +76,10 @@ hmi-operator-fatigue-detection/
 
 | Aşama | Tarih |
 |-------|-------|
-| Veri toplama & etiketleme | 10.12 – 17.12.2026 |
-| Kamera pipeline | 12.12 – 20.12.2026 |
-| Model eğitimi | 18.12 – 27.12.2026 |
-| Kabul & teslim | 28.12 – 30.12.2026 |
+| Veri toplama & etiketleme | — |
+| Kamera pipeline | — |
+| Model eğitimi | — |
+| Kabul & teslim | — |
 
 ---
 
