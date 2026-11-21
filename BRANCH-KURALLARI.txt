@@ -1,0 +1,12 @@
+BRANCH KURALLARI
+
+main branch'e direkt push yapilmaz.
+Her degisiklik ayri bir branch'ten PR ile gelir.
+Merge icin en az 1 kisi review vermeli.
+
+ORNEK BRANCH ADLARI
+veri/etiketleme-scripti
+kamera/optimize-capture
+model/ilk-egitim
+
+Kod olgunlasinca GitHub Actions ve CODEOWNERS eklenecek.
