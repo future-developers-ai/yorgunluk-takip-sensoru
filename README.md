@@ -63,26 +63,6 @@ hmi-operator-fatigue-detection/
 
 ---
 
-## 🗃️ Veri Kaynakları (Araştırılacak)
-
-- **NTHU-DDD** — Sürücü uyuşukluk veri seti
-- **UTA-RLDD** — Gerçek zamanlı yorgunluk tespiti
-- **CEW Dataset** — Kapalı/açık göz veri seti
-- Özel kayıt — Proje ortamına özgü veriler
-
----
-
-## ⏱️ Takvim
-
-| Aşama | Tarih |
-|-------|-------|
-| Veri toplama & etiketleme | — |
-| Kamera pipeline | — |
-| Model eğitimi | — |
-| Kabul & teslim | — |
-
----
-
 ## 🛠️ Teknoloji Yığını
 
 - **Görüntü işleme:** OpenCV
