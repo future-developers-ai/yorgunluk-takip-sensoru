@@ -34,3 +34,13 @@ Thumbs.db
 outputs/
 runs/
 logs/
+
+# UTA-RLDD verisi ve türetilen dosyalar (repo herkese açık, asla commit edilmez)
+data/
+*.mov
+*.MOV
+*.MP4
+*.zip
+*.parquet
+*.task
+models/
