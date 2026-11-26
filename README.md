@@ -57,14 +57,14 @@ Düşük dikkatli (5) videolar ayrı raporlanır. `dikkat_dusuk` ve `belirsiz` i
 
 ## Roller
 
-| Rol | Sinyal | Sistem parçası | Görevler |
-|---|---|---|---|
-| K1 | Göz | Birleştirme ve histerezis | T01–T10 |
-| K2 | Ağız | Uyarı ve JSON çıktısı | T11–T20 |
-| K3 | Baş | Canlı döngü ve kaynak okuma | T21–T30 |
-| K4 | Yüz görünürlüğü | Toplu çalıştırıcı ve ölçüm | T31–T40 |
+| Sinyal | Sistem parçası |
+|---|---|
+| Göz | Birleştirme ve histerezis |
+| Ağız | Uyarı ve JSON çıktısı |
+| Baş | Canlı döngü ve kaynak okuma |
+| Yüz görünürlüğü | Toplu çalıştırıcı ve ölçüm |
 
-Review döngüsü: K1 → K2'nin, K2 → K3'ün, K3 → K4'ün, K4 → K1'in PR'larını inceler.
+Review döngüsü: Göz → Ağız'ın, Ağız → Baş'ın, Baş → Yüz görünürlüğü'nün, Yüz görünürlüğü → Göz'ün PR'larını inceler.
 
 ## Takvim (7 gün)
 
