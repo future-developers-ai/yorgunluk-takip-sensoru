@@ -1,62 +1,30 @@
-# Python
+# İstenen temel hariç tutmalar
+data/
+models/
+.venv/
 __pycache__/
-*.py[cod]
-*$py.class
-*.pyd
-.env
-venv/
-.venv/
-env/
-ENV/
-
-# İstenen Temel Hariç Tutmalar (Veri, Model, Ortam, Medya)
-data/*
-!data/.gitkeep
-models/*
-!models/.gitkeep
-.venv/
 *.parquet
 *.mp4
 *.mov
 *.m4v
 *.zip
+.pytest_cache/
 
-# Diğer Medya ve Büyük Veriler
+# Diğer Python ve IDE dosyaları
+*.py[cod]
+.env
+venv/
+env/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+outputs/
+runs/
+logs/
 *.avi
 *.task
-*.jpg
-*.jpeg
-*.png
-
-# Model Ağırlıkları
 *.pt
 *.pth
 *.onnx
 *.weights
-
-# IDE ve Editörler
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# İşletim Sistemi
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Çıktılar ve Günlükler
-outputs/
-runs/
-logs/
-
-# UTA-RLDD verisi ve türetilen dosyalar (repo herkese açık, asla commit edilmez)
-data/
-*.mov
-*.MOV
-*.MP4
-*.zip
-*.parquet
-*.task
-models/
-*.log
