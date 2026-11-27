@@ -3,7 +3,6 @@ MediaPipe modülü ve FaceObs birim testleri (tests/test_tracker.py)
 """
 
 import numpy as np
-import pytest
 from contracts import FaceObs
 from capture.tracker import YuzAnalizci, varsayilan_model_yolu
 

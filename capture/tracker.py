@@ -8,10 +8,9 @@ Video akışından her kare için yüz tespiti, 52 blendshape skoru ve
 4x4 baş dönüş matrisini (transformation matrix) çıkaran MediaPipe sarmalayıcısı.
 """
 
-import os
 import urllib.request
 from pathlib import Path
-from typing import Optional, Dict, List, Tuple
+from typing import Optional, Dict
 import cv2
 import numpy as np
 import mediapipe as mp
