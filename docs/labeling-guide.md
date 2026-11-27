@@ -1,21 +1,22 @@
 # Etiketleme Kılavuzu
 
-## PERCLOS Standardı
-PERCLOS = Gözlerin %80+ kapalı olduğu sürenin toplam süreye oranı.
+Ekip kare kare elle etiketleme yapmaz. UTA-RLDD'nin video başına tek olan etiketi kullanılır.
 
-## Etiket Kategorileri
-| Etiket | Kriter |
-|--------|--------|
-| awake | PERCLOS < %20, dik baş, normal bakış |
-| drowsy | PERCLOS %20–%50, yavaş göz kırpma, hafif baş eğimi |
-| fatigue | PERCLOS > %50, uzun göz kapama, belirgin baş düşmesi |
-| uncertain | Görüntü kalitesi yetersiz, yüz kısmen kapalı |
+| Sınıf | Anlamı |
+|---|---|
+| 0 | Uyanık |
+| 5 | Düşük dikkatli (hafif uykululuk). Projedeki `dikkat_dusuk` durumuyla aynı şey değildir. |
+| 10 | Uykulu |
 
-## Araçlar
-- CVAT: https://cvat.ai
-- LabelImg alternatif
+## Etiket dosyası
+
+Her fold için `labels/<fold_adı>.csv` dosyası yazılır. Sütunlar: `katilimci`, `video`, `sinif` (0, 5, 10), `sure_sn`, `fps`.
+
+Yan duran videolar ve döndürme açıları `labels/donus.csv` dosyasına yazılır.
 
 ## Kurallar
-1. Her kare yalnızca bir etiket alır
-2. Şüpheli durumlarda uncertain kullan
-3. 10 kareden fazla yüz görünmüyorsa o bölümü atla
+
+1. `dikkat_dusuk` ve `belirsiz` için veri etiketi yoktur; bu durumlar sentetik testlerle ve webcam demosuyla doğrulanır.
+2. Kalibrasyon aynı katılımcının uyanık (0) videosundan alınır.
+3. Bir katılımcı yalnızca bir grupta (ayar, doğrulama, test) yer alır.
+4. Video, yüz görüntüsü ve kişi adı repoya girmez.
