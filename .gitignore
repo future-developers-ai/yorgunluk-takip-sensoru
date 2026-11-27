@@ -1,36 +1,50 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.pyd
 .env
 venv/
 .venv/
+env/
+ENV/
 
-# Model dosyalarÄ±
+# İstenen Temel Hariç Tutmalar (Veri, Model, Ortam, Medya)
+data/
+models/
+.venv/
+*.parquet
+*.mp4
+*.mov
+*.m4v
+*.zip
+
+# Diğer Medya ve Büyük Veriler
+*.avi
+*.task
+*.jpg
+*.jpeg
+*.png
+
+# Model Ağırlıkları
 *.pt
 *.pth
 *.onnx
 *.weights
 
-# Veri (bÃ¼yÃ¼k dosyalar repoya girmez)
-data/raw/
-data/labeled/
-data/splits/
-*.mp4
-*.avi
-*.jpg
-*.jpeg
-*.png
-
-# IDE
+# IDE ve Editörler
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS
+# İşletim Sistemi
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Ã‡Ä±ktÄ±lar
+# Çıktılar ve Günlükler
 outputs/
 runs/
 logs/
+*.log
