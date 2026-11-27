@@ -10,8 +10,10 @@ env/
 ENV/
 
 # İstenen Temel Hariç Tutmalar (Veri, Model, Ortam, Medya)
-data/
-models/
+data/*
+!data/.gitkeep
+models/*
+!models/.gitkeep
 .venv/
 *.parquet
 *.mp4
