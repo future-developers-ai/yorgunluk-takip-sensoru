@@ -26,6 +26,9 @@ dev = [
     "ruff>=0.1.0",
 ]
 
+[tool.setuptools]
+py-modules = ["contracts"]
+
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["capture*", "features*", "rules*", "src*", "app*", "eval*", "yorgunluk*"]

@@ -1,0 +1,280 @@
+{
+  "ad": "bas_dusmesi_yuz_kaybi",
+  "aciklama": "Elle hazırlanmış seyrek sözleşme örneği; kural çalıştırılmaz. Ham matrisler biçim örneğidir, elle verilmiş açılardan türetilmemiştir. Uyarı modülü çalışmadığından uyari=False.",
+  "kayitlar": [
+    {
+      "frame": {
+        "t_s": 0.0
+      },
+      "face_obs": {
+        "timestamp_ms": 0,
+        "yuz_var": true,
+        "blendshapes": {
+          "_neutral": 0.0,
+          "browDownLeft": 0.0,
+          "browDownRight": 0.0,
+          "browInnerUp": 0.0,
+          "browOuterUpLeft": 0.0,
+          "browOuterUpRight": 0.0,
+          "cheekPuff": 0.0,
+          "cheekSquintLeft": 0.0,
+          "cheekSquintRight": 0.0,
+          "eyeBlinkLeft": 0.05,
+          "eyeBlinkRight": 0.05,
+          "eyeLookDownLeft": 0.0,
+          "eyeLookDownRight": 0.0,
+          "eyeLookInLeft": 0.0,
+          "eyeLookInRight": 0.0,
+          "eyeLookOutLeft": 0.0,
+          "eyeLookOutRight": 0.0,
+          "eyeLookUpLeft": 0.0,
+          "eyeLookUpRight": 0.0,
+          "eyeSquintLeft": 0.0,
+          "eyeSquintRight": 0.0,
+          "eyeWideLeft": 0.0,
+          "eyeWideRight": 0.0,
+          "jawForward": 0.0,
+          "jawLeft": 0.0,
+          "jawOpen": 0.05,
+          "jawRight": 0.0,
+          "mouthClose": 0.0,
+          "mouthDimpleLeft": 0.0,
+          "mouthDimpleRight": 0.0,
+          "mouthFrownLeft": 0.0,
+          "mouthFrownRight": 0.0,
+          "mouthFunnel": 0.0,
+          "mouthLeft": 0.0,
+          "mouthLowerDownLeft": 0.0,
+          "mouthLowerDownRight": 0.0,
+          "mouthPressLeft": 0.0,
+          "mouthPressRight": 0.0,
+          "mouthPucker": 0.0,
+          "mouthRight": 0.0,
+          "mouthRollLower": 0.0,
+          "mouthRollUpper": 0.0,
+          "mouthShrugLower": 0.0,
+          "mouthShrugUpper": 0.0,
+          "mouthSmileLeft": 0.0,
+          "mouthSmileRight": 0.0,
+          "mouthStretchLeft": 0.0,
+          "mouthStretchRight": 0.0,
+          "mouthUpperUpLeft": 0.0,
+          "mouthUpperUpRight": 0.0,
+          "noseSneerLeft": 0.0,
+          "noseSneerRight": 0.0
+        },
+        "eye_blink_left": 0.05,
+        "eye_blink_right": 0.05,
+        "jaw_open": 0.05,
+        "transformation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "parlaklik": 120.0
+      },
+      "features": {
+        "t_s": 0.0,
+        "yuz_var": true,
+        "goz_kapali_skor": 0.05,
+        "perclos": 0.0,
+        "kapali_sure_s": 0.0,
+        "jaw_open": 0.05,
+        "esneme_sayisi": 0,
+        "pitch_deg": 0.0,
+        "yaw_deg": 0.0,
+        "parlaklik": 120.0
+      },
+      "isaretler": [],
+      "vote": null,
+      "decision": {
+        "t_s": 0.0,
+        "durum": "uyanik",
+        "baslangic_s": 0.0,
+        "neden": "",
+        "uyari": false
+      }
+    },
+    {
+      "frame": {
+        "t_s": 1.0
+      },
+      "face_obs": {
+        "timestamp_ms": 1000,
+        "yuz_var": true,
+        "blendshapes": {
+          "_neutral": 0.0,
+          "browDownLeft": 0.0,
+          "browDownRight": 0.0,
+          "browInnerUp": 0.0,
+          "browOuterUpLeft": 0.0,
+          "browOuterUpRight": 0.0,
+          "cheekPuff": 0.0,
+          "cheekSquintLeft": 0.0,
+          "cheekSquintRight": 0.0,
+          "eyeBlinkLeft": 0.95,
+          "eyeBlinkRight": 0.95,
+          "eyeLookDownLeft": 0.0,
+          "eyeLookDownRight": 0.0,
+          "eyeLookInLeft": 0.0,
+          "eyeLookInRight": 0.0,
+          "eyeLookOutLeft": 0.0,
+          "eyeLookOutRight": 0.0,
+          "eyeLookUpLeft": 0.0,
+          "eyeLookUpRight": 0.0,
+          "eyeSquintLeft": 0.0,
+          "eyeSquintRight": 0.0,
+          "eyeWideLeft": 0.0,
+          "eyeWideRight": 0.0,
+          "jawForward": 0.0,
+          "jawLeft": 0.0,
+          "jawOpen": 0.05,
+          "jawRight": 0.0,
+          "mouthClose": 0.0,
+          "mouthDimpleLeft": 0.0,
+          "mouthDimpleRight": 0.0,
+          "mouthFrownLeft": 0.0,
+          "mouthFrownRight": 0.0,
+          "mouthFunnel": 0.0,
+          "mouthLeft": 0.0,
+          "mouthLowerDownLeft": 0.0,
+          "mouthLowerDownRight": 0.0,
+          "mouthPressLeft": 0.0,
+          "mouthPressRight": 0.0,
+          "mouthPucker": 0.0,
+          "mouthRight": 0.0,
+          "mouthRollLower": 0.0,
+          "mouthRollUpper": 0.0,
+          "mouthShrugLower": 0.0,
+          "mouthShrugUpper": 0.0,
+          "mouthSmileLeft": 0.0,
+          "mouthSmileRight": 0.0,
+          "mouthStretchLeft": 0.0,
+          "mouthStretchRight": 0.0,
+          "mouthUpperUpLeft": 0.0,
+          "mouthUpperUpRight": 0.0,
+          "noseSneerLeft": 0.0,
+          "noseSneerRight": 0.0
+        },
+        "eye_blink_left": 0.95,
+        "eye_blink_right": 0.95,
+        "jaw_open": 0.05,
+        "transformation_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "parlaklik": 120.0
+      },
+      "features": {
+        "t_s": 1.0,
+        "yuz_var": true,
+        "goz_kapali_skor": 0.95,
+        "perclos": 0.0,
+        "kapali_sure_s": 0.0,
+        "jaw_open": 0.05,
+        "esneme_sayisi": 0,
+        "pitch_deg": 25,
+        "yaw_deg": 0.0,
+        "parlaklik": 120.0
+      },
+      "isaretler": [
+        {
+          "ad": "bas_dusmesi",
+          "guc": "guclu",
+          "t_s": 1.0,
+          "neden": "bas_dusmesi_goz_kapali"
+        }
+      ],
+      "vote": null,
+      "decision": {
+        "t_s": 1.0,
+        "durum": "yorgun",
+        "baslangic_s": 1.0,
+        "neden": "bas_dusmesi_goz_kapali",
+        "uyari": false
+      }
+    },
+    {
+      "frame": {
+        "t_s": 1.1
+      },
+      "face_obs": {
+        "timestamp_ms": 1100,
+        "yuz_var": false,
+        "blendshapes": null,
+        "eye_blink_left": null,
+        "eye_blink_right": null,
+        "jaw_open": null,
+        "transformation_matrix": null,
+        "parlaklik": 120.0
+      },
+      "features": {
+        "t_s": 1.1,
+        "yuz_var": false,
+        "goz_kapali_skor": null,
+        "perclos": null,
+        "kapali_sure_s": null,
+        "jaw_open": null,
+        "esneme_sayisi": null,
+        "pitch_deg": null,
+        "yaw_deg": null,
+        "parlaklik": 120.0
+      },
+      "isaretler": [],
+      "vote": {
+        "t_s": 1.1,
+        "neden": "yuz_yok"
+      },
+      "decision": {
+        "t_s": 1.1,
+        "durum": "yorgun",
+        "baslangic_s": 1.0,
+        "neden": "yuz_yok",
+        "uyari": false
+      }
+    }
+  ]
+}
