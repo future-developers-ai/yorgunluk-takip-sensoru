@@ -1,11 +1,14 @@
 """scripts/extract.py adlandırma ve satır üretimi testleri (model gerektirmez)."""
 
+import shutil
+import subprocess
+
 import numpy as np
 import pandas as pd
 import pytest
 
 from contracts import FaceObs
-from scripts.extract import cikti_adi, satir
+from scripts.extract import _ac, cikti_adi, satir
 from src.sozlesme import BLENDSHAPE_ADLARI, MATRIS_SUTUNLARI, SUTUNLAR, dogrula
 
 
@@ -40,3 +43,17 @@ def test_satirlar_sozlesmeye_uyar():
     dogrula(df)
     assert df.loc[0, "m01"] == 1 and df.loc[0, "m10"] == 4  # satır sırası
     assert df.loc[1, BLENDSHAPE_ADLARI + MATRIS_SUTUNLARI].isna().all()
+
+
+@pytest.mark.skipif(shutil.which("ffmpeg") is None, reason="ffmpeg yok")
+def test_dondurme_bilgisi_uygulanir(tmp_path):
+    duz, donuk = tmp_path / "duz.mp4", tmp_path / "donuk.mp4"
+    ortak = ["ffmpeg", "-y", "-loglevel", "error"]
+    subprocess.run([*ortak, "-f", "lavfi", "-i", "testsrc=size=320x180:rate=10:duration=1",
+                    str(duz)], check=True)
+    subprocess.run([*ortak, "-display_rotation", "90", "-i", str(duz), "-c", "copy", str(donuk)],
+                   check=True)
+    cap = _ac(donuk, tmp_path)
+    ok, kare = cap.read()
+    cap.release()
+    assert ok and kare.shape[:2] == (320, 180)

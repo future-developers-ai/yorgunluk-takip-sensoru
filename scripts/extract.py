@@ -62,7 +62,10 @@ def _ac(video: Path, gecici: Path) -> cv2.VideoCapture:
     okunuyor = cap.isOpened() and cap.grab()
     cap.release()
     if okunuyor:
-        return cv2.VideoCapture(str(video))
+        cap = cv2.VideoCapture(str(video))
+        # telefon videoları döndürme bilgisini üstbilgide taşır; OpenCV 4.11 kendisi uygulamaz
+        cap.set(cv2.CAP_PROP_ORIENTATION_AUTO, 1)
+        return cap
     cevrilen = gecici / "cevrilen.mp4"
     subprocess.run(
         ["ffmpeg", "-y", "-loglevel", "error", "-i", str(video), "-an",
