@@ -1,0 +1,7 @@
+# Herkes yalnızca kendi bölümünü değiştirir.
+
+[visibility]
+# Başlangıç değerleri; 5. gün Fold1-2 üzerinde ayarlanır.
+yuz_kayip_s = 1.0       # saniye
+parlaklik_esik = 40     # gri ton ortalaması, 0-255
+yaw_esik_derece = 60    # derece
