@@ -21,3 +21,11 @@ Video dosyaları `.gitignore` içindeki `data/` kuralıyla Git dışındadır.
 
 Fold4 final test verisidir. Videoların ve çıkarım sonuçlarının içine, son gün
 testine kadar bakılmaz.
+
+## Yön kontrolü
+
+Çıkarımdan önce video yönü sayısal olarak denetlendi: her videodan birkaç karede
+yüzün bulunup bulunmadığı ve başın yatıklık açısı ölçüldü. Görüntüler açılıp
+izlenmedi, eşik seçilmedi. 16 videoda döndürme bilgisi uygulanmadığı için yüz
+yan ya da ters geliyordu; çıkarım betiği düzeltildikten sonra 36 videonun
+tamamı dik.
