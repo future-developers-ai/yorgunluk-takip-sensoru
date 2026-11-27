@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yorgunluk-takip-sensoru"
+version = "0.1.0"
+description = "Kamera görüntülerinden operatör dikkat ve yorgunluğunu gerçek zamanlı analiz eden bilgisayarlı görü sistemi"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Casım Tugay", email = "tugaycsm@gmail.com" },
+]
+dependencies = [
+    "mediapipe>=0.10.20",
+    "opencv-python>=4.8.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "pyarrow>=14.0.0",
+    "scipy>=1.10.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["capture*", "features*", "rules*", "src*", "app*", "eval*", "yorgunluk*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
