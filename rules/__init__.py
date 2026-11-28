@@ -1,0 +1,1 @@
+"""İşaret ve oy kuralları."""
