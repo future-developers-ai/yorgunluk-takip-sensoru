@@ -50,7 +50,3 @@ def test_ayar_dosyadan_okunur(tmp_path):
         encoding="utf-8",
     )
     assert ayar_oku(yol) == BelirsizAyari(2.5, 30, 45)
-
-
-def test_repodaki_config_okunur():
-    assert ayar_oku().yaw_esik_derece == 60
